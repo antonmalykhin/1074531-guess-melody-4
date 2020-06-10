@@ -1,7 +1,7 @@
 # Учебный проект «Угадай мелодию» [![Build status][travis-image]][travis-url]
 
 * Студент: [Антон Малыхин](https://up.htmlacademy.ru/react/4/user/1074531).
-* Наставник: `Неизвестно`.
+* Наставник: [Владимир Чебаков](https://htmlacademy.ru/profile/id1100789).
 
 ---
 
