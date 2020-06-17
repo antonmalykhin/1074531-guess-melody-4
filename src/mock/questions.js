@@ -1,14 +1,6 @@
-import React from 'react';
-import renderer from 'react-test-renderer';
-import App from './app.jsx';
-
 const AVATAR_URL = `https://api.adorable.io/avatars/128`;
 
-const Settings = {
-  ERROR_COUNT: 3
-};
-
-const questions = [
+export default [
   {
     type: `genre`,
     genre: `rock`,
@@ -43,15 +35,3 @@ const questions = [
     }],
   }
 ];
-
-it(`Render App`, () => {
-  const tree = renderer
-    .create(<App
-      errorCount={Settings.ERROR_COUNT}
-      questions={questions}
-    />)
-    .toJSON();
-
-  expect(tree).toMatchSnapshot();
-});
-
