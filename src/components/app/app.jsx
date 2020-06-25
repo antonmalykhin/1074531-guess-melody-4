@@ -42,7 +42,7 @@ class App extends PureComponent {
       switch (question.type) {
         case GameType.GENRE:
           return (
-            <GameScreen type={GameType.GENRE}>
+            <GameScreen type={question.type}>
               <GenreQuestionScreenWrapped
                 onAnswer={() => {
                   this.setState((prevState) => ({
@@ -56,7 +56,7 @@ class App extends PureComponent {
 
         case GameType.ARTIST:
           return (
-            <GameScreen type={GameType.ARTIST}>
+            <GameScreen type={question.type}>
               <ArtistQuestionScreenWrapped
                 onAnswer={() => {
                   this.setState((prevState) => ({
