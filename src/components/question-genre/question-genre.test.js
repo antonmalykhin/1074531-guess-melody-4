@@ -20,13 +20,17 @@ const question = {
   }],
 };
 
-it(`Should Question render correctly`, () => {
+it(`Should QuestionGenre render correctly`, () => {
   const tree = renderer
     .create(<QuestionGenre
       onAnswer={() => { }}
       question={question}
-    />)
-    .toJSON();
+      renderPlayer={() => {}}
+    />, {
+      createNodeMock: () => {
+        return {};
+      }
+    }).toJSON();
 
   expect(tree).toMatchSnapshot();
 });
